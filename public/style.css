@@ -1,0 +1,323 @@
+
+/* ------------------------------------------BACKGROUND ---------------------------------------------*/ 
+#body {
+    background: rgb(10, 44, 56) none repeat scroll 0% 0%;
+    padding-top: 0px;
+    margin-top: 1px;
+    clear: both;
+    color: #AAA;
+    display: block        
+}
+/* Photo main portable */
+.photo_main {
+  background-repeat: no-repeat;
+  background-image: url("images/Photo main.png");	
+  background-position: 75% 20%; 
+  background-size: 30% 
+}
+
+ /* ---------------------------------menu login haut ---droite--------------------------------*/
+.box {
+  position: absolute;
+  vertical-align: middle;
+  color: #a0762e;
+  display: inline-block;
+  font-weight:bold;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  font-family: "Arial", serif;
+  font-size: 12px;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 1px solid rgb(10, 44, 56);
+  -webkit-transition: 0.5s;
+}
+.box {
+  position: absolute;
+  vertical-align: middle;
+  color: #a0762e;
+  display: inline-block;
+  font-weight:bold;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  font-family: "Arial", serif;
+  font-size: 12px;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 1px solid rgb(10, 44, 56);
+  -webkit-transition: 0.5s;
+}
+.box:hover {
+  border: 1px solid rgba(0, 160, 80, 0);
+  color: rgb(10, 44, 56);
+}
+.box::before,
+.box::after {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.foo::before {
+  border-bottom: 1px solid #a0762e;
+  border-left: 1px solid #a0762e;
+  -webkit-transform-origin: 0 100%;
+}
+.foo::after {
+  border-top: 1px solid #a0762e;
+  border-right: 1px solid #a0762e;
+  -webkit-transform-origin: 100% 0%;
+}
+.box:hover::after,
+.box:hover::before {
+  -webkit-transform: scale(1);
+}
+/* --------------------------------------TEXTES ARTISTES MOUV---------------------------------------*/
+#container {
+  color:#a0762e;
+  font-size:66px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:static;
+  min-width:100%;
+  bottom:20%;
+  display:block;
+}
+#flip {
+  height:80px;
+  overflow:hidden;
+}
+#flip > div > div {
+  color:#a0762e;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+#flip div:first-child {
+  animation: show 6s linear infinite;
+}
+#flip div div {
+  background:rgb(10, 44, 56);
+}
+#flip div:first-child div {
+  background:rgb(10, 44, 56);
+}
+#flip div:last-child div {
+  background:rgb(10, 44, 56);
+}
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+p {
+  position:fixed;
+  width:100%;
+  bottom:50px;
+  font-size:20px;
+  color:#a0762e;
+  margin-top:200px;
+}
+ /*------------------------- celebetrip ecriture verticale gauche --------------------------------*/
+.text-vertical-span {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  top: 80vh;
+  left: 1%;
+  position: absolute;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-weight: 100;
+  width: auto;
+  font-size: 2.5vh;
+  overflow: hidden;
+  transform: rotate(180deg);
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  font-size:12px;
+  color:#a0762e;
+}
+
+/* -----------------------------------------FOOTER HOME ----------------------------------------------*/
+.copyright {
+    color: #a0762e;
+    line-height: 30px;
+    min-height: 50px;
+    padding: 0px 0;
+    margin-bottom: 15px
+}
+#footer {  /* bloc entier */
+    border-top: 5px solid #a0762e; /* ligne horizontale */
+    background: #033649 none repeat scroll 0% 0%;
+    padding-top: 30px;
+    margin-top: 300px;
+    margin-bottom: 30px;
+    clear: both;
+    color: #AAA;
+    display: block;
+}
+#footer.widgettitle {
+    margin: 0px;
+    padding: 0px 0px 15px;
+    border-bottom: medium none;
+}
+#footer h4 {
+    color: #a0762e;
+}
+#footer ul {
+    list-style: outside none none;
+}
+#footer li {
+    padding: 7px 0px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    margin: 0px;
+}
+#footer li a {
+    color: #AAA;
+}
+
+/* -----------------------------------------menu artistes----------------------------------------------*/
+
+
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+    
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+}
+/* background des liens menus */
+#menu-demo2 li:first-child{
+background-color: #65537A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #a0762e 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #a0762e 100%);
+}
+#menu-demo2 li:nth-child(2){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #F6AD1A 0%, #a0762e 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #a0762e 100%);
+}
+#menu-demo2 li:nth-child(3){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #a0762e 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #a0762e 100%);
+}
+#menu-demo2 li:last-child{
+background-color: #CFFF6A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #a0762e 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #a0762e 100%);
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#F6AD1A;
+}
+#menu-demo2 li:last-child li{
+background:#F6AD1A;
+}
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#F6AD1A;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+color:#000;
+}
+
+
+/** essai bande couleur jaune Page */
+.wrapper {
+  width: 100%;
+ height : 200px
+}
+.band {
+  color: rgb(10, 44, 56);
+  background-color: #a0762e;
+  margin-top: 200px
+}
+.content {
+  width: 900px;
+  max-width: 100%;
+  height : 384px;
+  max-height :30%;
+  margin: auto
+}
+
